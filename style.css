@@ -1,0 +1,63 @@
+:root {
+    font-size: 20px;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #04090c, #0d141a, #1a2025);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #1a2025;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #image-container {
+        width: 350px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 3rem 0;
+        img {
+            transform: translate(0%);
+            width: 100%;
+        }
+    }
+    button {
+        background-color: white;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: 0.5s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+footer {
+    background-color: #04090c;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    font-size: 0.75rem;
+    padding: 0.75rem 0;
+}
